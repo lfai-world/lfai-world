@@ -74,10 +74,9 @@ Each published chapter opens in three layers: the **edited text**, the **edit pr
 ```mermaid
 flowchart LR
   A["Phone · share once<br/>or an Issue form"] -->|push raw/| B["WC-01 inbox"]
-  B -->|world-intake| H["WC-00 HQ<br/>(public relay)"]
-  G["WC-04 gate<br/>a person approves"] -->|world-approve| H
-  C(["daily 06:00 cron"]) --> H
-  H -->|world-run| R["WC-02 runner<br/>(private Actions)"]
+  B -->|world-intake| R["WC-02 runner<br/>(private Actions)"]
+  G["WC-04 gate<br/>a person approves"] -->|world-approve| R
+  C(["daily 06:00 cron"]) --> R
   R --> S["WC-01 … WC-12<br/>all twelve stations"]
   S --> D["HQ dashboard · badges<br/>this profile's live numbers"]
   R --> M[("WC-12 mirror<br/>git bundles · 30 days")]
@@ -103,7 +102,7 @@ Most people use GitHub as a place to store code. This account uses it as **a zer
 | GitHub feature | What it does in this factory | See it here |
 |---|---|---|
 | **Repositories** | Fifteen drawers, numbered in production order; private by default | [ecosystem map](#the-whole-ecosystem-at-a-glance) |
-| **Actions — events** | A new conversation or an approval sends a signal; HQ relays it; a private runner runs all twelve stations | <a href="https://github.com/lfai-world/world-00-hq"><img src="https://img.shields.io/badge/signals-automated-2fbf7f?style=flat-square&logo=githubactions&logoColor=white" alt="signals"></a> |
+| **Actions — events** | A new conversation or an approval signals a private runner directly; it runs all twelve stations and refreshes the public pages. The public repositories hold no keys | <a href="#the-line-in-motion"><img src="https://img.shields.io/badge/signals-automated-2fbf7f?style=flat-square&logo=githubactions&logoColor=white" alt="signals"></a> |
 | **Actions — cron** | Daily 06:00 check run · quarterly parts scout (Jan · Apr · Jul · Oct) | <a href="https://github.com/lfai-world/world-99-parts"><img src="https://img.shields.io/badge/schedule-automated-2fbf7f?style=flat-square&logo=githubactions&logoColor=white" alt="schedule"></a> |
 | **Pages + PWA** | The HQ dashboard and every web-book chapter, served free, installable like an app | [dashboard](https://lfai-world.github.io/world-00-hq/) |
 | **Issues as a CMS** | An Issue form in the inbox becomes a conversation file and enters the line — no database | `world-01-inbox` · form “New conversation” |
