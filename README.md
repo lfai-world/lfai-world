@@ -1,9 +1,14 @@
 <p align="center"><img src="assets/hero.svg" alt="LFAI WORLD — twelve-station knowledge factory" width="100%"></p>
 
 <p align="center">
-  <a href="https://lfai-world.github.io/world-00-hq/"><b>▶ Live factory dashboard</b></a> &nbsp;·&nbsp;
-  <a href="https://github.com/lfai-world/world-00-hq"><b>Headquarters repository</b></a> &nbsp;·&nbsp;
-  <a href="https://dimas-40.github.io/lfai-world/"><b>LFAI WORLD</b></a>
+  <a href="https://lfai-world.github.io/world-00-hq/"><img src="assets/btn-dashboard.png" alt="Live dashboard" width="24%"></a>
+  <a href="https://lfai-world.github.io/world-00-hq/#showroom"><img src="assets/btn-showroom.png" alt="Showroom" width="24%"></a>
+  <a href="https://github.com/lfai-world/world-00-hq"><img src="assets/btn-hq.png" alt="Headquarters" width="24%"></a>
+  <a href="#how-it-works"><img src="assets/btn-how.png" alt="How it works" width="24%"></a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/endpoint?url=https://lfai-world.github.io/world-00-hq/badges/lots.json&style=flat-square" alt="lots"> <img src="https://img.shields.io/endpoint?url=https://lfai-world.github.io/world-00-hq/badges/yield.json&style=flat-square" alt="yield"> <img src="https://img.shields.io/endpoint?url=https://lfai-world.github.io/world-00-hq/badges/stations.json&style=flat-square" alt="stations"> <img src="https://img.shields.io/endpoint?url=https://lfai-world.github.io/world-00-hq/badges/wiring.json&style=flat-square" alt="wiring"> <img src="https://img.shields.io/endpoint?url=https://lfai-world.github.io/world-00-hq/badges/chapters.json&style=flat-square" alt="chapters"> <img src="https://img.shields.io/endpoint?url=https://lfai-world.github.io/world-00-hq/badges/pii.json&style=flat-square" alt="pii"> <img src="https://img.shields.io/endpoint?url=https://lfai-world.github.io/world-00-hq/badges/updated.json&style=flat-square" alt="updated">
 </p>
 
 ## Your AI conversations are your best raw material. Publish them from an account you own.
@@ -14,6 +19,32 @@ People who create knowledge every day — authors, lecturers, researchers, creat
 
 <p align="center"><a href="https://lfai-world.github.io/world-00-hq/"><img src="assets/dashboard.png" alt="Live HQ dashboard: lots in, shipped, yield, production line, showroom" width="100%"></a></p>
 <p align="center"><sub>The live dashboard of this account's reference factory — real numbers, refreshed from the owner's device.</sub></p>
+
+
+## The whole ecosystem at a glance
+
+<p align="center"><img src="assets/ecosystem.png" alt="Fifteen repositories: public profile and headquarters, twelve private stations, a private parts warehouse" width="100%"></p>
+
+| # | Repository | Role | Visibility |
+|---|---|---|---|
+| — | [`lfai-world`](https://github.com/lfai-world/lfai-world) | This profile — what the factory is, live numbers | Public |
+| WC-00 | [`world-00-hq`](https://github.com/lfai-world/world-00-hq) | Headquarters — dashboard, recipe, wiring, KPI, showroom | Public |
+| WC-01 | `world-01-inbox` | Intake — conversations arrive (share from phone or an Issue form) | Private |
+| WC-02 | `world-02-ledger` | Ledger + cloud runner — de-duplicate, trace every lot | Private |
+| WC-03 | `world-03-atoms` | Knowledge atoms | Private |
+| WC-04 | `world-04-gate` | **Human gate** — personal-data scrub, a person approves | Private |
+| WC-05 … 10 | `book` · `cards` · `voice` · `motion` · `class` · `press` | Outputs — web book, cards, audio, motion, courseware, distribution | Private |
+| WC-11 | `world-11-archive` | Archive — search index, the owner's style data | Private |
+| WC-12 | `world-12-mirror` | Mirror — full git bundles on every run | Private |
+| — | `world-99-parts` | Open-source parts warehouse — quarterly scout | Private |
+
+## Live — refreshed by the factory, not by hand
+
+<!-- LIVE:START -->
+| | |
+|---|---|
+| Conversations in | refreshing… |
+<!-- LIVE:END -->
 
 ## How it works
 
@@ -32,17 +63,22 @@ Each published chapter opens in three layers: the **edited text**, the **edit pr
 
 <p align="center"><img src="assets/three-layers.png" alt="One chapter in three layers: edited text, edit process, original conversation" width="100%"></p>
 
-## Measured, not claimed — reference run
+## GitHub as a factory — the playbook
 
-| | |
-|---|---|
-| Conversations in | **5**, one each from Claude, ChatGPT, Gemini, Grok and Perplexity |
-| Knowledge atoms | **79** |
-| Published chapters | **5** — each with edited text, edit notes and the original |
-| Style data | **55** person → AI pairs (JSONL), kept by the owner |
-| Stations passed | **12 / 12** for every lot · wiring check **13 / 13** lines |
-| Yield | **100 %** · scrap 0 · rework 0 |
-| Personal data left in published output | **0** (automated check) |
+Most people use GitHub as a place to store code. This account uses it as **a zero-server production plant and a permanent database**, and every feature below is running here today. Each row is something a new owner learns during setup — by voice, through an agent, without memorising commands.
+
+| GitHub feature | What it does in this factory | See it here |
+|---|---|---|
+| **Repositories** | Fifteen drawers, numbered in production order; private by default | [ecosystem map](#the-whole-ecosystem-at-a-glance) |
+| **Actions — events** | A new conversation or an approval sends a signal; HQ relays it; a private runner runs all twelve stations | <a href="https://github.com/lfai-world/world-00-hq"><img src="https://img.shields.io/badge/signals-automated-2fbf7f?style=flat-square&logo=githubactions&logoColor=white" alt="signals"></a> |
+| **Actions — cron** | Daily 06:00 check run · quarterly parts scout (Jan · Apr · Jul · Oct) | <a href="https://github.com/lfai-world/world-99-parts"><img src="https://img.shields.io/badge/schedule-automated-2fbf7f?style=flat-square&logo=githubactions&logoColor=white" alt="schedule"></a> |
+| **Pages + PWA** | The HQ dashboard and every web-book chapter, served free, installable like an app | [dashboard](https://lfai-world.github.io/world-00-hq/) |
+| **Issues as a CMS** | An Issue form in the inbox becomes a conversation file and enters the line — no database | `world-01-inbox` · form “New conversation” |
+| **Agent pull requests** | The scout agent opens a PR, a check validates it, then it merges itself | `world-99-parts` · PRs |
+| **Secrets + variables** | Wiring keys live in the owner's own Actions secrets — never in a file, never with us | repository settings |
+| **Artifacts** | Every cloud run stores git bundles of all stations for 30 days | runner artifacts |
+| **Endpoint badges** | The numbers above are JSON files the runner writes after each run | [badges/](https://lfai-world.github.io/world-00-hq/badges/yield.json) |
+| **REST / GraphQL API** | The installer and the agent drive all of this — one command, `world apply`, then `world wire` | installer |
 
 ## Why this is different
 
