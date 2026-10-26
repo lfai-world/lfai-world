@@ -69,6 +69,33 @@ Each published chapter opens in three layers: the **edited text**, the **edit pr
 
 <p align="center"><img src="assets/three-layers.png" alt="One chapter in three layers: edited text, edit process, original conversation" width="100%"></p>
 
+## The line in motion
+
+```mermaid
+flowchart LR
+  A["Phone · share once<br/>or an Issue form"] -->|push raw/| B["WC-01 inbox"]
+  B -->|world-intake| H["WC-00 HQ<br/>(public relay)"]
+  G["WC-04 gate<br/>a person approves"] -->|world-approve| H
+  C(["daily 06:00 cron"]) --> H
+  H -->|world-run| R["WC-02 runner<br/>(private Actions)"]
+  R --> S["WC-01 … WC-12<br/>all twelve stations"]
+  S --> D["HQ dashboard · badges<br/>this profile's live numbers"]
+  R --> M[("WC-12 mirror<br/>git bundles · 30 days")]
+  X(["quarterly cron"]) --> P["scout agent"] -->|opens PR| Q{"check"} -->|pass → merges itself| W["WC-99 parts"]
+```
+
+## What it costs to run
+
+| Part | Runs on | Monthly cost |
+|---|---|---|
+| Repositories, Issues, Pages, public Actions | GitHub Free | **0** |
+| Private station runs | GitHub Free — 2,000 Actions minutes included; one full line run takes about 1–2 minutes | **0** |
+| Private web book (optional) | GitHub Pro — adds Pages for private repositories and more minutes | **USD 4** |
+| Engine | The owner's laptop, mini PC or Android phone — no GPU, no hosted server | **0** |
+| AI | The assistant the owner already pays for — any vendor | **owner's own plan** |
+
+No database, no VPS, no GPU. GitHub is the plant, the warehouse and the CDN; the owner's devices are the hands.
+
 ## GitHub as a factory — the playbook
 
 Most people use GitHub as a place to store code. This account uses it as **a zero-server production plant and a permanent database**, and every feature below is running here today. Each row is something a new owner learns during setup — by voice, through an agent, without memorising commands.
