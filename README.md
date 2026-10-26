@@ -1,10 +1,15 @@
 <p align="center"><img src="assets/hero.svg" alt="LFAI WORLD — twelve-station knowledge factory" width="100%"></p>
 
+<p align="center">
+  <a href="https://dimaspark.github.io/world-00-hq/"><b>▶ Live factory dashboard (HQ)</b></a> &nbsp;·&nbsp;
+  <a href="https://dimas-40.github.io/lfai-world/"><b>LFAI WORLD</b></a>
+</p>
+
 ## LFAI WORLD — a personal knowledge factory
 
 **Thesis.** The next generation of personal AI is being built *inside* large platforms: your notes, chats and drafts become their training material, and leaving is hard. LFAI WORLD takes the opposite position — **the individual owns the factory.** Knowledge workers keep their sources on their own devices, publish from their own account, and choose (and swap) whichever AI model suits them.
 
-**What this account is.** A reference installation: a headquarters repository ([world-00-hq](https://github.com/dimaspark/world-00-hq)) plus twelve private station repositories that form one production line, from raw AI conversation to published web book. The same line is installed for each client, one account at a time.
+**What this account is.** A reference installation: a headquarters repository ([world-00-hq](https://github.com/dimaspark/world-00-hq) — public, with a [live dashboard](https://dimaspark.github.io/world-00-hq/)) plus twelve private station repositories that form one production line, from raw AI conversation to published web book. The same line is installed for each client, one account at a time.
 
 | Station | Repository | Role | Fab analogy |
 |---|---|---|---|
@@ -44,6 +49,6 @@
 
 ### Status (2026)
 - Engine and installer: end-to-end test suite passing (12 stations, de-duplication, approval, publishing, data masking, backup/restore, idempotent re-runs, lot tracking).
-- This account: reference line installed — HQ + 12 stations, all private.
+- This account: reference line running — 5 real conversations from 5 AIs → 5 published chapters, yield 100%. HQ is public (dashboard); the 12 stations stay private.
 
 <sub>LFAI WORLD · Life First, AI Second</sub>
