@@ -17,7 +17,7 @@ People who create knowledge every day — authors, lecturers, researchers, creat
 
 ## How it works
 
-<p align="center"><img src="assets/architecture.svg" alt="Architecture: devices run the engine, one GitHub account holds HQ plus twelve private stations, a person approves at the gate" width="100%"></p>
+<p align="center"><img src="assets/architecture.png" alt="Architecture: devices run the engine, one GitHub account holds HQ plus twelve private stations, a person approves at the gate" width="100%"></p>
 
 1. **Capture** — share a long conversation once from the phone. The capture app stores it without clipboard limits.
 2. **Process** — `world run` cleans and de-duplicates it, splits it into knowledge atoms and masks personal data. Deterministic; runs on a laptop, a mini PC or an Android phone.
