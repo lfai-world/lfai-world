@@ -53,9 +53,9 @@ People who create knowledge every day — authors, lecturers, researchers, creat
 | Shipped as web-book chapters | **7** — each with edited text, edit notes and the original |
 | Yield | **100.0%** · awaiting approval 0 · scrap 0 · rework 0 |
 | Stations passed | **7/7 lots · 12/12** |
-| Wiring check | **13/13 lines** |
+| Wiring check | **14/14 lines** |
 | Personal data left in published output | **0** (automated check) |
-| Last refreshed | 2026-10-27 19:53 KST — by the factory itself, not by hand |
+| Last refreshed | 2026-10-27 20:06 KST — by the factory itself, not by hand |
 <!-- LIVE:END -->
 
 ## How it works
