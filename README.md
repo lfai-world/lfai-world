@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/endpoint?url=https://lfai-world.github.io/world-00-hq/badges/lots.json&style=flat-square" alt="lots"> <img src="https://img.shields.io/endpoint?url=https://lfai-world.github.io/world-00-hq/badges/yield.json&style=flat-square" alt="yield"> <img src="https://img.shields.io/endpoint?url=https://lfai-world.github.io/world-00-hq/badges/stations.json&style=flat-square" alt="stations"> <img src="https://img.shields.io/endpoint?url=https://lfai-world.github.io/world-00-hq/badges/wiring.json&style=flat-square" alt="wiring"> <img src="https://img.shields.io/endpoint?url=https://lfai-world.github.io/world-00-hq/badges/chapters.json&style=flat-square" alt="chapters"> <img src="https://img.shields.io/endpoint?url=https://lfai-world.github.io/world-00-hq/badges/pii.json&style=flat-square" alt="pii"> <img src="https://img.shields.io/endpoint?url=https://lfai-world.github.io/world-00-hq/badges/updated.json&style=flat-square" alt="updated">
+  <a href="https://lfai-world.github.io/world-00-hq/#qa"><img src="https://img.shields.io/endpoint?url=https://lfai-world.github.io/world-00-hq/badges/qa.json&style=flat-square" alt="qa"></a> <img src="https://img.shields.io/endpoint?url=https://lfai-world.github.io/world-00-hq/badges/lots.json&style=flat-square" alt="lots"> <img src="https://img.shields.io/endpoint?url=https://lfai-world.github.io/world-00-hq/badges/yield.json&style=flat-square" alt="yield"> <img src="https://img.shields.io/endpoint?url=https://lfai-world.github.io/world-00-hq/badges/stations.json&style=flat-square" alt="stations"> <img src="https://img.shields.io/endpoint?url=https://lfai-world.github.io/world-00-hq/badges/wiring.json&style=flat-square" alt="wiring"> <img src="https://img.shields.io/endpoint?url=https://lfai-world.github.io/world-00-hq/badges/chapters.json&style=flat-square" alt="chapters"> <img src="https://img.shields.io/endpoint?url=https://lfai-world.github.io/world-00-hq/badges/pii.json&style=flat-square" alt="pii"> <img src="https://img.shields.io/endpoint?url=https://lfai-world.github.io/world-00-hq/badges/updated.json&style=flat-square" alt="updated">
 </p>
 
 ## Your AI conversations are your best raw material. Publish them from an account you own.
@@ -111,7 +111,7 @@ Most people use GitHub as a place to store code. This account uses it as **a zer
 | **Agent pull requests** | The scout agent opens a PR, a check validates it, then it merges itself | `world-99-parts` · PRs |
 | **Secrets + variables** | Wiring keys live in the owner's own Actions secrets — never in a file, never with us | repository settings |
 | **Artifacts** | Every cloud run stores git bundles of all stations for 30 days | runner artifacts |
-| **Endpoint badges** | The numbers above are JSON files the runner writes after each run | [badges/](https://lfai-world.github.io/world-00-hq/badges/yield.json) |
+| **Endpoint badges** | The numbers above — including the nightly QA score — are JSON files the runner writes after each run | [badges/](https://lfai-world.github.io/world-00-hq/badges/yield.json) |
 | **REST / GraphQL API** | The installer and the agent drive all of this — one command, `world apply`, then `world wire` | installer |
 
 ## Why this is different
