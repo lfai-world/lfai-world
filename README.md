@@ -43,13 +43,13 @@ People who create knowledge every day — authors, lecturers, researchers, creat
 <!-- LIVE:START -->
 | | |
 |---|---|
-| Conversations in | **6** — ChatGPT, Claude, Gemini, Grok, Perplexity |
+| Conversations in | **7** — ChatGPT, Claude, Gemini, Grok, Perplexity |
 | Shipped as web-book chapters | **6** — each with edited text, edit notes and the original |
-| Yield | **100.0%** · awaiting approval 0 · scrap 0 · rework 0 |
-| Stations passed | **6/6 lots · 12/12** |
+| Yield | **85.7%** · awaiting approval 1 · scrap 0 · rework 0 |
+| Stations passed | **6/7 lots · 12/12** |
 | Wiring check | **13/13 lines** |
 | Personal data left in published output | **0** (automated check) |
-| Last refreshed | 2026-10-26 15:38 KST — by the factory itself, not by hand |
+| Last refreshed | 2026-10-27 00:07 KST — by the factory itself, not by hand |
 <!-- LIVE:END -->
 
 ## How it works
