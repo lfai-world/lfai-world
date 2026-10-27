@@ -21,6 +21,12 @@ People who create knowledge every day — authors, lecturers, researchers, creat
 <p align="center"><sub>The live dashboard of this account's reference factory — real numbers, refreshed from the owner's device.</sub></p>
 
 
+## Watch it run (60 s)
+
+<p align="center"><a href="https://lfai-world.github.io/world-00-hq/assets/demo.mp4"><img src="https://lfai-world.github.io/world-00-hq/assets/demo.gif" alt="Demo: sample web book, one chapter's outputs, the three layers, the lesson, the dashboard and the self-scored QA" width="100%"></a></p>
+
+**What the factory ships, per conversation:** a web-book chapter in three layers · cards (1080×1350) · narration in the owner's voice · a vertical video · a lesson page — all on the **[sample site](https://lfai-world.github.io/world-00-hq/showroom/)**, searchable, with an [RSS feed](https://lfai-world.github.io/world-00-hq/feed.xml).
+
 ## The whole ecosystem at a glance
 
 <p align="center"><img src="assets/ecosystem.png" alt="Fifteen repositories: public profile and headquarters, twelve private stations, a private parts warehouse" width="100%"></p>
