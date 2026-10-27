@@ -97,6 +97,8 @@ No database, no VPS, no GPU. GitHub is the plant, the warehouse and the CDN; the
 
 ## GitHub as a factory — the playbook
 
+**Learn it lesson by lesson:** [the Playbook — ten lessons, each tied to something running here](https://github.com/lfai-world/world-00-hq/tree/main/playbook). Every change to the public side is itself an example: an instruction filed as an [issue](https://github.com/lfai-world/world-00-hq/issues?q=is%3Aissue), worked as a [pull request](https://github.com/lfai-world/world-00-hq/pulls?q=is%3Apr), merged on the owner's OK.
+
 Most people use GitHub as a place to store code. This account uses it as **a zero-server production plant and a permanent database**, and every feature below is running here today. Each row is something a new owner learns during setup — by voice, through an agent, without memorising commands.
 
 | GitHub feature | What it does in this factory | See it here |
