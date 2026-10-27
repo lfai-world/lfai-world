@@ -22,7 +22,7 @@
 <rect x="390" y="130" width="560" height="530" rx="20" fill="none" stroke="#2fbf7f" stroke-opacity=".5" stroke-dasharray="6 6"/>
 <text x="410" y="160" font-family="ui-monospace,Menlo,Consolas,monospace" font-size="14" fill="#8ff0bf">github.com/&lt;you&gt; — one account</text>
 <rect x="410" y="176" width="520" height="70" rx="14" fill="#123a2b" stroke="#8ff0bf"/>
-<text x="430" y="206" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="18" font-weight="800" fill="#fff">world-00-hq · Headquarters (public)</text>
+<text x="430" y="206" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="18" font-weight="800" fill="#fff">world-hq · Headquarters (public)</text>
 <text x="430" y="230" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="14" fill="#b9cbc2">dashboard · recipe · wiring · run sheet · KPI · showroom</text>
 <rect x="410" y="266" width="120" height="78" rx="12" fill="#0c1a14" stroke="#1f3a2f"/>
 <text x="422" y="290" font-family="ui-monospace,Menlo,Consolas,monospace" font-size="12" fill="#8aa79a">WC-01</text>
