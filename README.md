@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://lfai-world.github.io/world-00-hq/"><img src="assets/btn-dashboard.png" alt="Live dashboard" width="24%"></a>
-  <a href="https://lfai-world.github.io/"><img src="assets/btn-showroom.png" alt="Content archive" width="24%"></a>
+  <a href="https://lfai-world.github.io/world-00-hq/showroom/"><img src="assets/btn-showroom.png" alt="Sample outputs" width="24%"></a>
   <a href="https://github.com/lfai-world/world-00-hq"><img src="assets/btn-hq.png" alt="Headquarters" width="24%"></a>
   <a href="#how-it-works"><img src="assets/btn-how.png" alt="How it works" width="24%"></a>
 </p>
@@ -25,17 +25,16 @@ People who create knowledge every day — authors, lecturers, researchers, creat
 
 <p align="center"><a href="https://lfai-world.github.io/world-00-hq/assets/demo.mp4"><img src="https://lfai-world.github.io/world-00-hq/assets/demo.gif" alt="Demo: sample web book, one chapter's outputs, the three layers, the lesson, the dashboard and the self-scored QA" width="100%"></a></p>
 
-**What the factory ships, per conversation:** a web-book chapter in three layers · cards (1080×1350) · narration in the owner's voice · a vertical video · a lesson page — all published to the account's own **[content archive — lfai-world.github.io](https://lfai-world.github.io/)**, searchable, with an [RSS feed](https://lfai-world.github.io/feed.xml).
+**What the factory ships, per conversation:** a web-book chapter in three layers · cards (1080×1350) · narration in the owner's voice · a vertical video · a lesson page — all published on the HQ page: **[sample site](https://lfai-world.github.io/world-00-hq/showroom/)** — searchable, with an [RSS feed](https://lfai-world.github.io/world-00-hq/feed.xml). A customer's factory publishes the same way on their own HQ page.
 
 ## The whole ecosystem at a glance
 
-<p align="center"><img src="assets/ecosystem.png" alt="Sixteen repositories: public profile, content archive and headquarters, twelve private stations, a private parts warehouse" width="100%"></p>
+<p align="center"><img src="assets/ecosystem.png" alt="One business profile and one boilerplate factory: HQ with the sample outputs, twelve private stations, a private parts warehouse" width="100%"></p>
 
 | # | Repository | Role | Visibility |
 |---|---|---|---|
-| — | [`lfai-world`](https://github.com/lfai-world/lfai-world) | This profile — what the factory is, live numbers | Public |
-| WC-13 | [`lfai-world.github.io`](https://lfai-world.github.io/) | **Content archive** — the public site where the line publishes every approved chapter and its outputs | Public |
-| WC-00 | [`world-00-hq`](https://github.com/lfai-world/world-00-hq) | Headquarters — dashboard, recipe, wiring, KPI, showroom | Public |
+| — | [`lfai-world`](https://github.com/lfai-world/lfai-world) | **This profile — explains the business.** Everything below is the boilerplate factory installed per account | Public |
+| WC-00 | [`world-00-hq`](https://github.com/lfai-world/world-00-hq) | Headquarters — dashboard, wiring, KPI, and the **sample outputs** on its page ([sample site](https://lfai-world.github.io/world-00-hq/showroom/)) | Public |
 | WC-01 | `world-01-inbox` | Intake — conversations arrive (share from phone or an Issue form) | Private |
 | WC-02 | `world-02-ledger` | Ledger + cloud runner — de-duplicate, trace every lot | Private |
 | WC-03 | `world-03-atoms` | Knowledge atoms | Private |
@@ -85,8 +84,7 @@ flowchart LR
   G["WC-04 gate<br/>a person approves"] -->|world-approve| R
   C(["daily 06:00 cron"]) --> R
   R --> S["WC-01 … WC-12<br/>all twelve stations"]
-  S --> A2["WC-13 public site<br/>content archive"]
-  S --> D["HQ dashboard · badges<br/>this profile's live numbers"]
+  S --> D["HQ page: dashboard + sample outputs<br/>this profile's live numbers"]
   R --> M[("WC-12 mirror<br/>git bundles · 30 days")]
   X(["quarterly cron"]) --> P["scout agent"] -->|opens PR| Q{"check"} -->|pass → merges itself| W["WC-99 parts"]
 ```
@@ -114,7 +112,7 @@ Most people use GitHub as a place to store code. This account uses it as **a zer
 | **Repositories** | Fifteen drawers, numbered in production order; private by default | [ecosystem map](#the-whole-ecosystem-at-a-glance) |
 | **Actions — events** | A new conversation or an approval signals a private runner directly; it runs all twelve stations and refreshes the public pages. The public repositories hold no keys | <a href="#the-line-in-motion"><img src="https://img.shields.io/badge/signals-automated-2fbf7f?style=flat-square&logo=githubactions&logoColor=white" alt="signals"></a> |
 | **Actions — cron** | Daily 06:00 check run · quarterly parts scout (Jan · Apr · Jul · Oct) | <a href="https://github.com/lfai-world/world-99-parts"><img src="https://img.shields.io/badge/schedule-automated-2fbf7f?style=flat-square&logo=githubactions&logoColor=white" alt="schedule"></a> |
-| **Pages + PWA** | The content archive at the account's root address and the HQ dashboard, served free, installable like an app | [archive](https://lfai-world.github.io/) · [dashboard](https://lfai-world.github.io/world-00-hq/) |
+| **Pages + PWA** | The HQ page — dashboard plus the sample web book, installable like an app — served free | [sample site](https://lfai-world.github.io/world-00-hq/showroom/) · [dashboard](https://lfai-world.github.io/world-00-hq/) |
 | **Issues as a CMS** | An Issue form in the inbox becomes a conversation file and enters the line — no database | `world-01-inbox` · form “New conversation” |
 | **Agent pull requests** | The scout agent opens a PR, a check validates it, then it merges itself | `world-99-parts` · PRs |
 | **Secrets + variables** | Wiring keys live in the owner's own Actions secrets — never in a file, never with us | repository settings |
