@@ -3,7 +3,7 @@
 <p align="center">
   <a href="https://lfai-world.github.io/world-05-book/factory/"><img src="assets/btn-dashboard.png" alt="Live dashboard" width="24%"></a>
   <a href="https://lfai-world.github.io/world-05-book/"><img src="assets/btn-showroom.png" alt="Sample outputs" width="24%"></a>
-  <a href="https://github.com/lfai-world/world-hq"><img src="assets/btn-hq.png" alt="Headquarters" width="24%"></a>
+  <a href="https://github.com/lfai-world/world-05-book"><img src="assets/btn-hq.png" alt="Showroom repository" width="24%"></a>
   <a href="#how-it-works"><img src="assets/btn-how.png" alt="How it works" width="24%"></a>
 </p>
 
@@ -25,7 +25,7 @@ People who create knowledge every day — authors, lecturers, researchers, creat
 
 <p align="center"><a href="https://lfai-world.github.io/world-05-book/assets/demo.mp4"><img src="https://lfai-world.github.io/world-05-book/assets/demo.gif" alt="Demo: sample web book, one chapter's outputs, the three layers, the lesson, the dashboard and the self-scored QA" width="100%"></a></p>
 
-**What the factory ships, per conversation:** a web-book chapter in three layers · cards (1080×1350) · narration in the owner's voice · a vertical video · a lesson page — all published on the HQ page: **[sample site](https://lfai-world.github.io/world-05-book/)** — searchable, with an [RSS feed](https://lfai-world.github.io/world-05-book/feed.xml). A customer's factory publishes the same way on their own HQ page.
+**What the factory ships, per conversation:** a web-book chapter in three layers · cards (1080×1350) · narration in the owner's voice · a vertical video · a lesson page — all published by drawer 05: **[the showroom](https://lfai-world.github.io/world-05-book/)** — searchable, with an [RSS feed](https://lfai-world.github.io/world-05-book/feed.xml). A customer's factory publishes the same way from their own drawer 05.
 
 ## The whole ecosystem at a glance
 
@@ -34,15 +34,16 @@ People who create knowledge every day — authors, lecturers, researchers, creat
 | # | Repository | Role | Visibility |
 |---|---|---|---|
 | — | [`lfai-world`](https://github.com/lfai-world/lfai-world) | **This profile — explains the business.** Everything below is the boilerplate factory installed per account | Public |
-| HQ | [`world-hq`](https://github.com/lfai-world/world-hq) | Headquarters — dashboard, wiring, KPI, and the **sample outputs** on its page ([sample site](https://lfai-world.github.io/world-05-book/)) | Public |
+| HQ | `world-hq` | Control room — recipe, wiring, status, the private runner's home | Private |
 | WC-01 | `world-01-inbox` | Intake — conversations arrive (share from phone or an Issue form) | Private |
 | WC-02 | `world-02-ledger` | Ledger + cloud runner — de-duplicate, trace every lot | Private |
 | WC-03 | `world-03-atoms` | Knowledge atoms | Private |
 | WC-04 | `world-04-gate` | **Human gate** — personal-data scrub, a person approves | Private |
-| WC-05 … 10 | `book` · `cards` · `voice` · `motion` · `class` · `press` | Outputs — web book, cards, audio, motion, courseware, distribution | Private |
+| WC-05 | [`world-05-book`](https://github.com/lfai-world/world-05-book) | **Web book = the public showroom.** Every drawer posts its results here; this drawer's publish gate puts them on the web — [lfai-world.github.io/world-05-book](https://lfai-world.github.io/world-05-book/) | Public |
+| WC-06 … 10 | `cards` · `voice` · `motion` · `class` · `press` | Outputs — cards, audio, video, courseware, share kit | Private |
 | WC-11 | `world-11-archive` | Archive — search index, the owner's style data | Private |
 | WC-12 | `world-12-mirror` | Mirror — full git bundles on every run | Private |
-| — | `admin-parts` | Open-source parts warehouse — quarterly scout | Private |
+| admin | `admin-parts` | Development only — parts warehouse, quarterly scout (not installed for customers) | Private |
 
 ## Live — refreshed by the factory, not by hand
 
@@ -84,7 +85,7 @@ flowchart LR
   G["WC-04 gate<br/>a person approves"] -->|world-approve| R
   C(["daily 06:00 cron"]) --> R
   R --> S["WC-01 … WC-12<br/>all twelve stations"]
-  S --> D["HQ page: dashboard + sample outputs<br/>this profile's live numbers"]
+  S --> D["WC-05 web book = public showroom<br/>outputs · dashboard · this profile's live numbers"]
   R --> M[("WC-12 mirror<br/>git bundles · 30 days")]
   X(["quarterly cron"]) --> P["scout agent"] -->|opens PR| Q{"check"} -->|pass → merges itself| W["ADMIN parts"]
 ```
@@ -112,7 +113,7 @@ Most people use GitHub as a place to store code. This account uses it as **a zer
 | **Repositories** | Fifteen drawers, numbered in production order; private by default | [ecosystem map](#the-whole-ecosystem-at-a-glance) |
 | **Actions — events** | A new conversation or an approval signals a private runner directly; it runs all twelve stations and refreshes the public pages. The public repositories hold no keys | <a href="#the-line-in-motion"><img src="https://img.shields.io/badge/signals-automated-2fbf7f?style=flat-square&logo=githubactions&logoColor=white" alt="signals"></a> |
 | **Actions — cron** | Daily 06:00 check run · quarterly parts scout (Jan · Apr · Jul · Oct) | <a href="https://github.com/lfai-world/admin-parts"><img src="https://img.shields.io/badge/schedule-automated-2fbf7f?style=flat-square&logo=githubactions&logoColor=white" alt="schedule"></a> |
-| **Pages + PWA** | The HQ page — dashboard plus the sample web book, installable like an app — served free | [sample site](https://lfai-world.github.io/world-05-book/) · [dashboard](https://lfai-world.github.io/world-05-book/factory/) |
+| **Pages + PWA** | Drawer 05 — the web book (installable like an app), every chapter's outputs and the factory dashboard, served free from the one public drawer | [sample site](https://lfai-world.github.io/world-05-book/) · [dashboard](https://lfai-world.github.io/world-05-book/factory/) |
 | **Issues as a CMS** | An Issue form in the inbox becomes a conversation file and enters the line — no database | `world-01-inbox` · form “New conversation” |
 | **Agent pull requests** | The scout agent opens a PR, a check validates it, then it merges itself | `admin-parts` · PRs |
 | **Secrets + variables** | Wiring keys live in the owner's own Actions secrets — never in a file, never with us | repository settings |
