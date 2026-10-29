@@ -25,7 +25,7 @@ People who create knowledge every day — authors, lecturers, researchers, creat
 
 <p align="center"><a href="https://lfai-world.github.io/world-05-book/assets/demo.mp4"><img src="https://lfai-world.github.io/world-05-book/assets/demo.gif" alt="Demo: sample web book, one chapter's outputs, the three layers, the lesson, the dashboard and the self-scored QA" width="100%"></a></p>
 
-**What the factory ships, per conversation:** a web-book chapter in three layers · cards (1080×1350) · narration in the owner's voice · a vertical video · a lesson page — all published by drawer 05: **[the showroom](https://lfai-world.github.io/world-05-book/)** — searchable, with an [RSS feed](https://lfai-world.github.io/world-05-book/feed.xml). A customer's factory publishes the same way from their own drawer 05.
+**What the factory ships, per conversation:** a web-book chapter in three layers · cards (1080×1350) · narration (free edge TTS voice) · a vertical video · a lesson page — all published by drawer 05: **[the showroom](https://lfai-world.github.io/world-05-book/)** — searchable, with an [RSS feed](https://lfai-world.github.io/world-05-book/feed.xml). A customer's factory publishes the same way from their own drawer 05.
 
 ## The whole ecosystem at a glance
 
