@@ -51,12 +51,12 @@ People who create knowledge every day — authors, lecturers, researchers, creat
 | | |
 |---|---|
 | Conversations in | **8** — ChatGPT, Claude, Gemini, Grok, Perplexity |
-| Shipped as web-book chapters | **7** — each with edited text, edit notes and the original |
-| Yield | **87.5%** · awaiting approval 1 · scrap 0 · rework 0 |
+| Shipped as web-book chapters | **8** — each with edited text, edit notes and the original |
+| Yield | **100.0%** · awaiting approval 0 · scrap 0 · rework 0 |
 | Stations passed | **7/8 lots · 12/12** |
 | Wiring check | **14/14 lines** |
 | Personal data left in published output | **0** (automated check) |
-| Last refreshed | 2026-10-30 06:21 KST — by the factory itself, not by hand |
+| Last refreshed | 2026-10-30 06:46 KST — by the factory itself, not by hand |
 <!-- LIVE:END -->
 
 ## How it works
