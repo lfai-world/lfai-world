@@ -112,7 +112,7 @@ Most people use GitHub as a place to store code. This account uses it as **a zer
 |---|---|---|
 | **Repositories** | Fifteen drawers, numbered in production order; private by default | [ecosystem map](#the-whole-ecosystem-at-a-glance) |
 | **Actions — events** | A new conversation or an approval signals a private runner directly; it runs all twelve stations and refreshes the public pages. The public repositories hold no keys | <a href="#the-line-in-motion"><img src="https://img.shields.io/badge/signals-automated-2fbf7f?style=flat-square&logo=githubactions&logoColor=white" alt="signals"></a> |
-| **Actions — cron** | Daily 06:00 check run · quarterly parts scout (Jan · Apr · Jul · Oct) | <a href="https://github.com/lfai-world/admin-parts"><img src="https://img.shields.io/badge/schedule-automated-2fbf7f?style=flat-square&logo=githubactions&logoColor=white" alt="schedule"></a> |
+| **Actions — cron** | Daily 06:00 check run · quarterly parts scout (Jan · Apr · Jul · Oct) | <a href="https://github.com/lfai-world/world-05-book/tree/main/status"><img src="https://img.shields.io/badge/schedule-automated-2fbf7f?style=flat-square&logo=githubactions&logoColor=white" alt="schedule"></a> |
 | **Pages + PWA** | Drawer 05 — the web book (installable like an app), every chapter's outputs and the factory dashboard, served free from the one public drawer | [sample site](https://lfai-world.github.io/world-05-book/) · [dashboard](https://lfai-world.github.io/world-05-book/factory/) |
 | **Issues as a CMS** | An Issue form in the inbox becomes a conversation file and enters the line — no database | `world-01-inbox` · form “New conversation” |
 | **Agent pull requests** | The scout agent opens a PR, a check validates it, then it merges itself | `admin-parts` · PRs |
