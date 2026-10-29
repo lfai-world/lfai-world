@@ -50,13 +50,13 @@ People who create knowledge every day — authors, lecturers, researchers, creat
 <!-- LIVE:START -->
 | | |
 |---|---|
-| Conversations in | **4** — Claude |
-| Shipped as web-book chapters | **1** — each with edited text, edit notes and the original |
-| Yield | **25.0%** · awaiting approval 3 · scrap 0 · rework 0 |
-| Stations passed | **1/4 lots · 12/12** |
+| Conversations in | **4** — ChatGPT, Claude |
+| Shipped as web-book chapters | **4** — each with edited text, edit notes and the original |
+| Yield | **100.0%** · awaiting approval 0 · scrap 0 · rework 0 |
+| Stations passed | **4/4 lots · 12/12** |
 | Wiring check | **14/14 lines** |
 | Personal data left in published output | **0** (automated check) |
-| Last refreshed | 2026-10-30 00:09 KST — by the factory itself, not by hand |
+| Last refreshed | 2026-10-30 00:49 KST — by the factory itself, not by hand |
 <!-- LIVE:END -->
 
 ## How it works
