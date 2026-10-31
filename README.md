@@ -50,10 +50,10 @@ People who create knowledge every day — authors, lecturers, researchers, creat
 <!-- LIVE:START -->
 | | |
 |---|---|
-| Conversations in | **10** — ChatGPT, Claude, Gemini, Grok, Perplexity |
-| Shipped as web-book chapters | **7** — each with edited text, edit notes and the original |
-| Yield | **70.0%** · awaiting approval 3 · scrap 0 · rework 0 |
-| Stations passed | **7/10 lots · 12/12** |
+| Conversations in | **5** — ChatGPT, Claude |
+| Shipped as web-book chapters | **4** — each with edited text, edit notes and the original |
+| Yield | **80.0%** · awaiting approval 1 · scrap 0 · rework 0 |
+| Stations passed | **4/5 lots · 12/12** |
 | Wiring check | **14/14 lines** |
 | Personal data left in published output | **0** (automated check) |
 | Last refreshed | 2026-10-31 12:30 KST — by the factory itself, not by hand |
