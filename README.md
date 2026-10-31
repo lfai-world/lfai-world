@@ -56,7 +56,7 @@ People who create knowledge every day — authors, lecturers, researchers, creat
 | Stations passed | **7/8 lots · 12/12** |
 | Wiring check | **14/14 lines** |
 | Personal data left in published output | **0** (automated check) |
-| Last refreshed | 2026-10-31 15:01 KST — by the factory itself, not by hand |
+| Last refreshed | 2026-11-01 08:55 KST — by the factory itself, not by hand |
 <!-- LIVE:END -->
 
 ## How it works
