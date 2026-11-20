@@ -1,0 +1,30 @@
+{
+  "name": "LFAI Capture — 1탭 인입",
+  "short_name": "LFAI Capture",
+  "description": "공유 시트에서 1탭으로 내 레포(world-01-inbox)에 대화를 커밋한다.",
+  "lang": "ko",
+  "start_url": "./?source=pwa",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0b0c10",
+  "theme_color": "#0b0c10",
+  "icons": [
+    { "src": "./icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "./icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "maskable" }
+  ],
+  "share_target": {
+    "action": "./share-target.html",
+    "method": "POST",
+    "enctype": "multipart/form-data",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  },
+  "shortcuts": [
+    { "name": "캡처", "url": "./?shortcut=capture" },
+    { "name": "큐", "url": "./?shortcut=queue" }
+  ]
+}

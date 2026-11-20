@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "LFAI Capture Event v1",
+  "description": "PWA 공유 타깃이 만드는 캡처 이벤트. logs/YYYY/MM/evt-*.md 의 frontmatter(JSON)로 저장된다.",
+  "type": "object",
+  "required": ["id", "timestamp", "event_type", "target_lane", "source"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^evt-\\d{4}-\\d{2}-\\d{2}-\\d{6}$" },
+    "timestamp": { "type": "string", "format": "date-time" },
+    "event_type": { "enum": ["capture", "voice", "conversation", "commit", "deploy", "decision", "issue", "idea", "review"] },
+    "target_lane": { "enum": ["atoms", "book", "both", "archive"] },
+    "target_repo": { "type": "string", "description": "{prefix}-01-inbox (변수)" },
+    "intent": { "enum": ["plan", "generate", "fix", "review", "publish", "refactor", "audit", "learn", "record"] },
+    "artifact": { "enum": ["knowledge_atom", "prompt_atom", "both", "raw_only"] },
+    "source": { "enum": ["mobile", "pc", "termux", "field", "voice"] },
+    "context": { "type": "object", "properties": { "repo": { "type": "string" }, "lane_note": { "type": "string" } } },
+    "content": { "type": "object", "properties": { "text": { "type": "string" }, "url": { "type": "string" } } },
+    "routing_meta": { "type": "object", "properties": { "auto_compile": { "type": "boolean" }, "priority": { "enum": ["low", "normal", "high", "urgent"] } } },
+    "capture": { "type": "object", "properties": { "via": { "type": "string" }, "title": { "type": "string" }, "ua": { "type": "string" } } }
+  }
+}

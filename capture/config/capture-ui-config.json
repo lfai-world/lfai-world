@@ -1,0 +1,15 @@
+{
+  "schema": "lfai-world/capture-ui-config v1",
+  "description": "캡처 PWA UI 구성. 레인 = 어디로 보낼지(라우팅 의도). 실제 저장 위치는 {prefix}-01-inbox/logs/ 이고, 레인은 이벤트 메타로 downstream 에 전달된다.",
+  "lanes": [
+    { "value": "atoms",   "label": "⚛️ Atoms",   "desc": "지식원자로 컴파일 (기본)" },
+    { "value": "book",    "label": "📖 Book",    "desc": "공개 웹북 후보" },
+    { "value": "both",    "label": "⚡ Both",    "desc": "원자 + 북 둘 다" },
+    { "value": "archive", "label": "📦 Archive", "desc": "원본만 보관(자동 컴파일 끔)" }
+  ],
+  "event_types": ["conversation", "decision", "idea", "issue", "review", "capture", "voice"],
+  "intents": ["record", "plan", "generate", "learn", "audit"],
+  "repo_pattern": "{prefix}-01-inbox",
+  "path_template": "logs/{yyyy}/{mm}/{id}.md",
+  "defaults": { "lane": "atoms", "event_type": "conversation", "intent": "record" }
+}

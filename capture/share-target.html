@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LFAI Capture</title>
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<header><div class="brand"><span class="dot"></span> LFAI <b>CAPTURE</b></div></header>
+<main>
+  <section>
+    <h2>공유 도착</h2>
+    <p class="hint">서비스워커가 공유 내용을 받아 앱으로 넘깁니다. 잠시만 기다려 주세요.</p>
+    <p><a class="primary button" href="./?shared=1">앱으로 이동</a></p>
+    <p class="hint">계속 이 화면이면 홈 화면에 추가한 뒤 다시 공유해 주세요(서비스워커 필요).</p>
+  </section>
+</main>
+<script>
+  // 서비스워커 미지원 브라우저용 폴백
+  if ('serviceWorker' in navigator) { location.replace('./?shared=1'); }
+</script>
+</body>
+</html>

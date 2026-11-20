@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>LFAI Capture — 1탭 인입</title>
+<link rel="manifest" href="./manifest.webmanifest">
+<meta name="theme-color" content="#0b0c10">
+<link rel="icon" href="./icons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="./icons/icon.svg">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<header>
+  <div class="brand"><span class="dot"></span> LFAI <b>CAPTURE</b></div>
+  <div id="net" class="net" title="online">●</div>
+</header>
+
+<main>
+  <section id="view-capture">
+    <div id="banner" class="banner" hidden></div>
+    <label class="field">제목
+      <input id="title" type="text" placeholder="대화 제목 (비우면 본문 첫 줄)" autocomplete="off">
+    </label>
+    <label class="field">본문
+      <textarea id="text" rows="9" placeholder="공유하면 자동으로 채워집니다. 직접 붙여넣어도 됩니다."></textarea>
+    </label>
+    <div class="field">
+      <span class="label">어디로? <em>lane</em></span>
+      <div id="lanes" class="chips" role="radiogroup"></div>
+    </div>
+    <div class="grid2">
+      <label class="field">무슨 일?
+        <select id="event_type"></select>
+      </label>
+      <label class="field">목적
+        <select id="intent"></select>
+      </label>
+    </div>
+    <button id="save" class="primary">저장 — 1탭 인입</button>
+    <p class="hint">PAT은 이 브라우저 IndexedDB에만 저장됩니다. 서버 전송 없음(zero-retention).</p>
+  </section>
+
+  <section id="view-settings" hidden>
+    <h2>설정</h2>
+    <div class="grid2">
+      <label class="field">계정(owner)
+        <input id="owner" type="text" value="lfai-world" autocomplete="off" spellcheck="false">
+      </label>
+      <label class="field">접두사(prefix)
+        <input id="prefix" type="text" value="world" autocomplete="off" spellcheck="false">
+      </label>
+    </div>
+    <p class="hint">저장 위치: <code id="repoPreview"></code></p>
+    <label class="field">Fine-grained PAT
+      <input id="token" type="password" placeholder="github_pat_..." autocomplete="off" spellcheck="false">
+    </label>
+    <p class="hint"><a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">PAT 만들기</a> → Repository access: <b>Only select repositories</b> → <code id="repoPreview2"></code> → Permissions: <b>Contents: Read and write</b> 하나만.</p>
+    <div class="btnrow">
+      <button id="saveSettings" class="primary">저장</button>
+      <button id="testConn">연결 테스트</button>
+      <button id="clearToken" class="danger">토큰 삭제</button>
+    </div>
+    <div id="settingsMsg" class="msg"></div>
+  </section>
+
+  <section id="view-queue" hidden>
+    <h2>큐 <span id="queueCount" class="badge">0</span></h2>
+    <p class="hint">오프라인이거나 실패한 캡처는 여기에 남습니다. 온라인이 되면 자동 재전송됩니다.</p>
+    <div id="queueList" class="queue"></div>
+    <div class="btnrow">
+      <button id="flush" class="primary">지금 재전송</button>
+      <button id="clearQueue" class="danger">큐 비우기</button>
+    </div>
+  </section>
+</main>
+
+<nav>
+  <button data-view="capture" class="active">캡처</button>
+  <button data-view="queue">큐 <span id="navCount" class="badge">0</span></button>
+  <button data-view="settings">설정</button>
+</nav>
+<div id="toast" class="toast" hidden></div>
+<script src="./app.js"></script>
+</body>
+</html>
